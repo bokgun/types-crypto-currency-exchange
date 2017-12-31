@@ -1,5 +1,5 @@
 {
-  "name": "coinbot-type-defnititions",
+  "name": "coinbot-type-definitions",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -8,13 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/deptno-coinbot/coinbot-type-defnititions.git"
+    "url": "git+https://github.com/deptno-coinbot/coinbot-type-definitions.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/deptno-coinbot/coinbot-type-defnititions/issues"
+    "url": "https://github.com/deptno-coinbot/coinbot-type-definitions/issues"
   },
-  "homepage": "https://github.com/deptno-coinbot/coinbot-type-defnititions#readme"
+  "homepage": "https://github.com/deptno-coinbot/coinbot-type-definitions#readme",
+  "devDependencies": {}
 }
