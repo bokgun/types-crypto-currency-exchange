@@ -1,0 +1,20 @@
+{
+  "name": "coinbot-type-defnititions",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/deptno-coinbot/coinbot-type-defnititions.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/deptno-coinbot/coinbot-type-defnititions/issues"
+  },
+  "homepage": "https://github.com/deptno-coinbot/coinbot-type-defnititions#readme"
+}
