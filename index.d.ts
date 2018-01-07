@@ -8,7 +8,7 @@ type KRW = 'KRW'
 /*
   coin
  */
-type ECoin = ALL | BTC | ETH | DASH | LTC | ETC | XRP | BCH
+type ECoin = ALL | BTC | ETH | DASH | LTC | ETC | XRP | BCH | QTUM | BTG
 
 type ALL = 'ALL'
 type BTC = 'BTC'
@@ -18,6 +18,8 @@ type LTC = 'LTC'
 type ETC = 'ETC'
 type XRP = 'XRP'
 type BCH = 'BCH'
+type QTUM = 'QTUM'
+type BTG = 'BTG'
 
 /*
   exchange
