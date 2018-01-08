@@ -1,5 +1,6 @@
 {
-  "name": "coinbot-type-definitions",
+  "name": "types-crypto-currency-exchange",
+  "private": true,
   "version": "0.1.0",
   "description": "",
   "main": "index.js",
@@ -9,14 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/deptno-coinbot/coinbot-type-definitions.git"
+    "url": "git+https://github.com/deptno-coinbot/types-crypto-currency-exchange.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/deptno-coinbot/coinbot-type-definitions/issues"
+    "url": "https://github.com/deptno-coinbot/types-crypto-currency-exchange/issues"
   },
-  "homepage": "https://github.com/deptno-coinbot/coinbot-type-definitions#readme",
+  "homepage": "https://github.com/deptno-coinbot/types-crypto-currency-exchange#readme",
   "devDependencies": {}
 }
