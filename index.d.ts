@@ -89,7 +89,6 @@ interface TransactionSchema extends ExchangeSchema {
 interface OrderSchema extends ExchangeSchema {
   date: string // 현재 시간 Timestamp
   coin: ECoin // 주문 화폐단위
-  paymentBy: ECurrency // 결제 화폐단위
   bids: OrderBook[] // 구매요청
   asks: OrderBook[] // 판매요청
 }
