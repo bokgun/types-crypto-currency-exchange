@@ -1,31 +1,47 @@
 /*
   currency
  */
-type ECurrency = KRW | ECoin
+type ECurrency = KRW | USD | ECoin
 
 type KRW = 'KRW'
-
+type USD = 'USD'
 /*
   coin
  */
 type ECoin = ALL | BTC | ETH | DASH | LTC | ETC | XRP | BCH | QTUM | BTG | IOTA
+  | COB | CMT | REP | EOS | ETHOS | GNT | NGC | OMG | SAN | SPHTX | SNT | PAY | BAT | GTC | TRX
 
 type ALL = 'ALL'
-type BTC = 'BTC'
-type ETH = 'ETH'
-type DASH = 'DASH'
-type LTC = 'LTC'
-type ETC = 'ETC'
-type XRP = 'XRP'
-type BCH = 'BCH'
-type QTUM = 'QTUM'
-type BTG = 'BTG'
-type IOTA = 'IOTA'
+type BTC = 'BTC' // Bitcoin
+type ETH = 'ETH' // Ethereum
+type DASH = 'DASH' // Dash
+type LTC = 'LTC' // Litecoin
+type ETC = 'ETC' // Ethereum Classic
+type XRP = 'XRP' // Ripple
+type BCH = 'BCH' // Bitcoin Cach
+type QTUM = 'QTUM' // QTUM
+type BTG = 'BTG' // Bitcoin Gold
+type IOTA = 'IOTA' // IOTA
+type COB = 'COB' // Cobinhood
+type CMT = 'CMT' // Cyber Miles
+type REP = 'REP' // Augur
+type EOS = 'EOS' // EOS
+type ETHOS = 'ETHOS' // Ethos
+type GNT = 'GNT' // Golem
+type NGC = 'NGC' // Naga
+type OMG = 'OMG' // OmiseGO
+type SAN = 'SAN' // Santiment Network Token
+type SPHTX = 'SPHTX' // Sophia TX
+type SNT = 'SNT' // Status Network Token
+type PAY = 'PAY' // Ten X
+type BAT = 'BAT' // Basic Attention Token
+type GTC = 'GTC' // Game Credit
+type TRX = 'TRX' // TRON
 
 /*
   exchange
  */
-type EExchange = 'bithumb' | 'coinone' | 'bittrex'
+type EExchange = 'bithumb' | 'coinone' | 'bittrex' | 'cobinhood'
 
 /*
   operation
@@ -47,6 +63,7 @@ type ASK = 'ask'
 interface ExchangeSchema {
   exchange: EExchange
   coin: ECoin
+  currency: ECurrency
   latency: number
 }
 
