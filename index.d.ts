@@ -1,7 +1,8 @@
 /*
   currency
  */
-type ECurrency = KRW | USD | ECoin
+type EMarket = KRW | USD | BTC | ETH
+type ECurrency = EMarket | ECoin
 
 type KRW = 'KRW'
 type USD = 'USD'
@@ -70,24 +71,27 @@ interface ExchangeSchema {
 type WithLatency<T> = T & { latency: number }
 
 interface TickerSchema extends ExchangeSchema {
-  price: number
+  price: number    // 기축통화 1코인 환산 가격 환산 가격
+  market: EMarket  // 기축통화
   minPrice: number
   maxPrice: number
   volume: number
-  date: string
+  date: number
   avgPrice?: number
 }
 
 interface TransactionSchema extends ExchangeSchema {
-  date: string
-  type: ETransaction // 판/구매 (ask, bid)
-  price: number // 1 coin 거래 금액
-  volume: number //	거래 coin 수량
-  total: number // 총 거래금액
+  price: number       // 기축통화 1코인 환산 가격 환산 가격
+  market: EMarket     // 기축통화
+  type: ETransaction  // 판/구매 (ask, bid)
+  volume: number      //거래 coin 수량
+  total: number       // 총 거래금액
+  date: number
 }
 
 interface OrderSchema extends ExchangeSchema {
-  date: string // 현재 시간 Timestamp
+  market: EMarket     // 기축통화
+  date: number // 현재 시간 Timestamp
   coin: ECoin // 주문 화폐단위
   bids: OrderBook[] // 구매요청
   asks: OrderBook[] // 판매요청
