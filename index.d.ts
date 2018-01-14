@@ -64,7 +64,6 @@ type ASK = 'ask'
 interface ExchangeSchema {
   exchange: EExchange
   coin: ECoin
-  currency: ECurrency
   latency: number
 }
 
