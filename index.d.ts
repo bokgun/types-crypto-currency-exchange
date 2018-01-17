@@ -103,14 +103,14 @@ interface OrderBook {
 interface Coin {
   coin: ECoin
   exchanges: Exchange[]
-  volume: number
   period: number
-  timestamp: number
 }
 interface Exchange {
   name: EExchange
   market: EMarket
   prices: BasePrices
+  volume: number
+  timestamp: number
 }
 interface BasePrices {
   btc: number
