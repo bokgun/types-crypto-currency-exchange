@@ -100,3 +100,21 @@ interface OrderBook {
   quantity: number
   price: number
 }
+interface Coin {
+  coin: ECoin
+  exchanges: Exchange[]
+  volume: number
+  period: number
+  timestamp: number
+}
+interface Exchange {
+  name: EExchange
+  market: EMarket
+  prices: BasePrices
+}
+interface BasePrices {
+  btc: number
+  eth?: number
+  usd: number
+  krw: number
+}
