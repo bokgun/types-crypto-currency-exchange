@@ -117,4 +117,5 @@ interface BasePrices {
   eth?: number
   usd: number
   krw: number
+  usdt?: number
 }
