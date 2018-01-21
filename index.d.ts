@@ -118,3 +118,5 @@ interface BasePrices {
   usd: number
   krw: number
 }
+
+type EStream = 'exchange-stream' | 'coin-stream'
