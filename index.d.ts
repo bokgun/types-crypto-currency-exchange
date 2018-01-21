@@ -117,6 +117,7 @@ interface BasePrices {
   eth?: number
   usd: number
   krw: number
+  usdt?: number
 }
 
 type EStream = 'exchange-stream' | 'coin-stream'
