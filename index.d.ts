@@ -1,7 +1,7 @@
 /*
   currency
  */
-type EMarket = KRW | USD | BTC | ETH
+type EMarket = KRW | USD | BTC | ETH | USDT
 type ECurrency = EMarket | ECoin
 
 type KRW = 'KRW'
@@ -13,6 +13,9 @@ type ECoin = ALL | BTC | ETH | DASH | LTC | ETC | XRP | BCH | QTUM | BTG | IOTA
   | COB | CMT | REP | EOS | ETHOS | GNT | NGC | OMG | SAN | SPHTX | SNT | PAY | BAT | GTC | TRX
 
 type ALL = 'ALL'
+
+type USDT = 'USDT' // USD tether
+
 type BTC = 'BTC' // Bitcoin
 type ETH = 'ETH' // Ethereum
 type DASH = 'DASH' // Dash
