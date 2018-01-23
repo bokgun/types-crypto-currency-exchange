@@ -1,7 +1,7 @@
 {
   "name": "types-crypto-currency-exchange",
   "private": true,
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "",
   "main": "index.js",
   "types": "index.d.ts",
